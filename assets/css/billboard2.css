@@ -1,0 +1,1032 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+:root {
+  --first-color: hsl(29, 80%, 58%);
+  --first-color-light: hsl(29, 80%, 70%);
+  --black-color: hsl(29, 16%, 10%);
+  --text-color: hsl(29, 8%, 65%);
+  --body-color: hsl(29, 100%, 99%);
+  --body-font: 'Poppins', sans-serif;
+  --specific-font: 'Audiowide', cursive;
+  --h3-font-size: 1.125rem;
+  --smaller-font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  font-family: var(--body-font);
+}
+
+image {
+width: 100% ;
+height: 100%;
+object-fit: cover;
+}
+
+main {
+padding: 0.5rem;
+display: flex;
+width: 100%;
+height: 100vh;
+}
+
+.Nav_all{
+  width: 140px;
+  height: 730px;
+  display: flex;
+  position: fixed;
+}
+
+.navigation2 .nav-links2 a{
+  position: absolute;
+  visibility: hidden;
+} 
+
+.content{
+  margin: 0 auto;
+}
+
+.progress-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  width: 25px;
+}
+
+.progress-bar-part {
+  position           : relative;
+  display            : -webkit-box;
+  display            : -webkit-flex;
+  display            : -ms-flexbox;
+  display            : flex;
+  flex-direction     : column;
+  width              : 5px;
+  -webkit-box-align  : center;
+  -webkit-align-items: center;
+  -ms-flex-align     : center;
+  align-items        : center;
+}
+
+.progress-ping {
+  position: absolute;
+  bottom: -22.1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  width: 6px;
+  height: 6px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 0 0.2rem #ffffff;
+}
+
+.progress-bar-line {
+  position: absolute;
+  z-index: -1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 345px;
+  -webkit-box-align: column;
+  -webkit-align-items: column;
+  -ms-flex-align: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgb(255, 255, 255,0.3) 95%);
+}
+
+.progress-bar-part1 {
+  position           : relative;
+  display            : -webkit-box;
+  display            : -webkit-flex;
+  display            : -ms-flexbox;
+  display            : flex;
+  flex-direction     : column;
+  width              : 5px;
+  -webkit-box-align  : center;
+  -webkit-align-items: center;
+  -ms-flex-align     : center;
+  align-items        : center;
+  top: 355px;
+}
+
+.progress-bar-line1 {
+  position: absolute;
+  z-index: -1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 321px;
+  -webkit-box-align: column;
+  -webkit-align-items: column;
+  -ms-flex-align: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(rgb(255, 255, 255,0.3) 85%, rgb(0, 0, 0) );
+}
+
+.nav .navigation {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 0 54px;
+  justify-content: space-between;
+}
+
+.div .navigation1 {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.navigation1 .nav-links1 {
+  width: 90px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 96px;
+  gap: 65px;
+}
+
+.navigation1 .nav-links1 a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navigation .nav-logo img {
+  height: 100%;
+  width: 50%;
+  object-fit: contain;
+}
+
+.Card {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+  justify-items: center;
+}
+
+button {
+  position: absolute;
+  visibility: hidden;
+  font-size: 45px;
+  background-color: transparent;
+  border: none;
+  color: var(--body-color);
+}
+
+.card-profile {  
+  position: relative;
+  width: 375px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  clip-path: polygon(0% 10%, 15% 0%, 
+  100% 0%, 100% 0%, 
+  100% 90%, 90% 100%, 
+  0% 100%, 0% 100%)
+}
+
+.card__img {
+  width: 90%;
+  height: 255px;
+  clip-path: polygon(0% 15%, 10% 0%, 
+  100% 0%, 100% 0%, 
+  100% 90%, 90% 100%, 
+  0% 100%, 0% 100%);
+}
+
+.Info{
+    margin: 1rem;
+}
+
+.Iprofession{
+    font-size: 25px;
+}
+
+.specification{
+    text-align: justify;
+    margin: 1rem;
+}
+
+.Specifications{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.card__name {
+  color: rgb(19, 16, 16);
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.card__profession {
+  color: #000000;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+.card__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 83%;
+  height: 105px;
+  padding: 0.5rem;
+  background: rgb(0, 0, 0);
+  text-align: initial;
+  margin-top: 1rem;
+  margin-left: 20px;
+  clip-path: polygon(0% 64%, 20% 0%, 
+  100% 0%, 100% 0%, 
+  100% 39%, 84% 100%, 
+  0% 100%, 0% 100%)
+}
+
+.card__social-price{
+    font-weight: 800;
+    font-family: var(--specific-font);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    display: block;    
+}
+
+.card__social-text {
+  display: block;
+  color: var(--body-color);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card-profile:before{
+	content: '';
+	position: absolute;
+	border: 4px solid;
+    border-image: linear-gradient(to bottom, #ffffff 30%, #1c1c1d 100%)1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	visibility: hidden;
+}
+
+.card-profile:hover:before{
+	top: -2px;
+	bottom: -2px;
+	left: -2px;
+	right: -2px;	
+	visibility: visible;
+}
+
+a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+
+.navigation1 .nav-links1 a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navigation .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+	font-size: 2rem;
+	color: #ffffff;
+	font-family:"Poppins", sans-serif;
+}
+  
+.Follow{
+	font-size: 25px;
+}
+
+.navigation .nav-links a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navigation1 .nav-links1 a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+.navigation .nav-links a:hover {
+font-size: 3rem;
+transition: font-size 3rem;
+}
+
+.navigation .nav-links a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.Location{
+  text-align: center;
+  font-family: var(--specific-font);
+  margin: 2rem 0;
+  font-size: 35px; 
+  background-image: linear-gradient(to right, rgb(0, 0, 0) , #ffffff);
+  color: #000;
+}
+
+.nav-links a:hover {
+transform:scale(1rem);
+border-bottom: none;
+}
+
+.nav-links1 a:hover {
+border-bottom: 1px solid #fff;
+}
+
+
+@media (min-width: 1150px) and (max-width: 1409px){
+
+    .content{
+        margin-left: 10rem;
+        width: 80%;
+    }
+
+    .Card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .card-profile {    
+        position: relative;
+        width: 430px;
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        clip-path: polygon(0% 10%, 10% 0%, 
+        100% 0%, 100% 0%, 
+        100% 90%, 90% 100%, 
+        0% 100%, 0% 100%);
+    }
+    
+    .card__img {
+        width: 90%;
+        height: 245px;
+        clip-path: polygon(0% 15%, 10% 0%, 
+        100% 0%, 100% 0%, 
+        100% 90%, 90% 100%, 
+        0% 100%, 0% 100%);
+    }
+    .Info{
+        margin: 1rem;
+    }
+
+    .Iprofession{
+        font-size: 25px;
+    }
+
+    .specification{
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .Specifications{
+        text-align: center;
+        display: block;
+        font-size: 20px;
+    }
+
+    .card__name {
+    color: rgb(19, 16, 16);
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    }
+
+    .card__profession {
+    color: #000000;
+    font-weight: 700;
+    text-transform: capitalize;
+    }
+
+
+    .card__social {
+    width: 83%;
+    height: 110px;
+    padding: 0.5rem;
+    background: rgb(0, 0, 0);
+    text-align: initial;
+    margin-top: 1rem;
+    margin-left: 20px;
+    clip-path: polygon(0% 64%, 20% 0%, 
+    100% 0%, 100% 0%, 
+    100% 39%, 84% 100%, 
+    0% 100%, 0% 100%)
+    }
+
+    .card__social-price{
+        font-weight: 800;
+        font-family: var(--specific-font);
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: block;    
+    }
+
+    .card__social-text {
+    display: block;
+    color: var(--body-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+
+}
+
+@media (min-width: 705px) and (max-width: 1149px){
+
+    .content{
+        margin-left: 10rem;
+        width: 80%;
+    }
+
+    .Card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .card-profile {    
+        position: relative;
+        width: 430px;
+        background-color:white;
+        padding: 1rem;
+        text-align: center;
+        clip-path: polygon(0% 10%, 10% 0%, 
+        100% 0%, 100% 0%, 
+        100% 90%, 90% 100%, 
+        0% 100%, 0% 100%);
+    }
+    
+    .card__img {
+        width: 90%;
+        height: 245px;
+        clip-path: polygon(0% 15%, 10% 0%, 
+        100% 0%, 100% 0%, 
+        100% 90%, 90% 100%, 
+        0% 100%, 0% 100%);
+    }
+    .Info{
+        margin: 1rem;
+    }
+
+    .Iprofession{
+        font-size: 25px;
+    }
+
+    .specification{
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .Specifications{
+        text-align: center;
+        display: block;
+        font-size: 20px;
+    }
+
+    .card__name {
+    color: rgb(19, 16, 16);
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    }
+
+    .card__profession {
+    color: #000000;
+    font-weight: 700;
+    text-transform: capitalize;
+    }
+
+
+    .card__social {
+    width: 83%;
+    height: 110px;
+    padding: 0.5rem;
+    background: rgb(0, 0, 0);
+    text-align: initial;
+    margin-top: 1rem;
+    margin-left: 20px;
+    clip-path: polygon(0% 64%, 20% 0%, 
+    100% 0%, 100% 0%, 
+    100% 39%, 84% 100%, 
+    0% 100%, 0% 100%)
+    }
+
+    .card__social-price{
+        font-weight: 800;
+        font-family: var(--specific-font);
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: block;    
+    }
+
+    .card__social-text {
+        display: block;
+        color: var(--body-color);
+        font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+}
+
+@media (min-width: 560px) and (max-width:704px) {
+    
+    .navigation .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      color: #ffffff;
+      font-family:"Poppins", sans-serif;
+    }
+      
+    .Follow{
+    font-size: 20px;
+    }
+    
+    .Location {
+      text-align: center;
+      font-family: var(--specific-font);
+      margin: 2rem;
+      font-size: 35px;
+      position: relative;
+      padding: 0.5rem;
+      width: 70%;
+      left: 16%;
+      background-image: linear-gradient(to right, rgb(0, 0, 0) , #ffffff);
+      color: #000;
+    }
+    
+
+  .content{
+    margin-left: 10rem;
+    width: 80%;
+    }
+
+    .Card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .card-profile {    
+        position: relative;
+        width: 330px;
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        clip-path: polygon(0% 10%, 10% 0%, 
+        100% 0%, 100% 0%, 
+        100% 90%, 90% 100%, 
+        0% 100%, 0% 100%);
+    }
+
+    .card__img {
+        width: 90%;
+        min-width: 200px;
+        height: 80%;
+        min-height: 220px;
+    }
+
+    .Info{
+        margin: 1rem;
+    }
+
+    .Iprofession{
+        font-size: 25px;
+    }
+
+    .specification{
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .Specifications{
+        text-align: center;
+        display: block;
+        font-size: 20px;
+    }
+
+    .card__name {
+    color: rgb(19, 16, 16);
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    }
+
+    .card__profession {
+    color: #000000;
+    font-weight: 700;
+    text-transform: capitalize;
+    }
+
+
+    .card__social {
+    width: 83%;
+    height: 110px;
+    padding: 0.5rem;
+    background: rgb(0, 0, 0);
+    text-align: initial;
+    margin-top: 1rem;
+    margin-left: 20px;
+    clip-path: polygon(0% 64%, 20% 0%, 
+    100% 0%, 100% 0%, 
+    100% 39%, 84% 100%, 
+    0% 100%, 0% 100%)
+    }
+
+    .card__social-price{
+        font-weight: 800;
+        font-family: var(--specific-font);
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: block;    
+    }
+
+    .card__social-text {
+    display: block;
+    color: var(--body-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+  
+  .progress-bar {
+    width: 3.36rem;
+  }
+
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-logo img {
+    width: 100%;
+  }
+
+
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-logo img {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 420px) and (max-width: 559px) {
+
+  button {
+    position: static;
+    visibility: visible;
+    background-color: transparent;
+    border: none;
+    color: var(--body-color);
+    font-size: 5vh;
+  }
+
+  .container-column .section-title {
+    margin-top: 55px;
+  }
+
+  .navigation .nav-logo img {
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+  }
+
+  .nav-links2 {
+    gap: 60px;
+    z-index: 3;
+    transition: all .5s linear;
+  }
+
+  .nav-links2 a:hover {
+    border-bottom: 1px solid #fff;
+  }
+  
+  .nav-links2 {
+    gap: 60px;
+    z-index: 3;
+    transition: all .5s linear;
+  }
+
+  .navigation2 .nav-links2 a{
+	  position: static;
+	  visibility: visible;
+	  text-decoration: none;
+	  color: rgb(255, 255, 255);
+	  text-transform: uppercase;
+	  font-size: 20px;
+    font-weight: bolder;
+	}  
+
+  .nav-links2 {
+    position: fixed;
+    right: 100%;
+    top: 35px;
+    color: var(--black-color);
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 40px;
+    font-family: var(--specific-font);
+    border: 10px solid transparent; 
+    border-image: linear-gradient(to bottom, #000000 0%, #ffffff 100%) 1;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    clip-path: polygon(0% 20%, 20% 0%, 
+        100% 0%, 100% 0%, 
+        100% 80%, 80% 100%, 
+        0% 100%, 0% 100%);
+  }
+
+  .Location {
+    text-align: center;
+    font-family: var(--specific-font);
+    margin: 1rem;
+    font-size: 30px;
+    position: relative;
+    width: 70%;
+    left: 16%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , #ffffff);
+    color: #000;
+  }
+
+  .Nav_all{
+    position:absolute;
+    visibility: hidden;
+  }
+
+  .content{
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .Card {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .card-profile {
+    width: 275px;
+  }
+
+  .card__img {
+    width: 100%;
+    clip-path: polygon(0% 15%, 10% 0%, 100% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 100%);
+  }
+
+  .nav-links{
+    position: absolute;
+    visibility: hidden;
+  } 
+  
+
+  .card__social {
+    width: 85%;
+  }
+
+  .card__social-text {
+    display: block;
+    font-size: 12px;
+    padding-left: 0.5rem;
+  }
+  
+  .nav-links__visibility {
+    right: 12%;
+    z-index: 3;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+
+  button {
+    position: static;
+    visibility: visible;
+    background-color: transparent;
+    border: none;
+    color: var(--body-color);
+    font-size: 5vh;
+  }
+
+  .container-column .section-title {
+    margin-top: 55px;
+  }
+
+  .navigation .nav-logo img {
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+  }
+
+  .nav-links2 {
+    gap: 60px;
+    z-index: 3;
+    transition: all .5s linear;
+  }
+
+  .nav-links2 a:hover {
+    border-bottom: 1px solid #fff;
+  }
+  
+  .nav-links2 {
+    gap: 60px;
+    z-index: 3;
+    transition: all .5s linear;
+  }
+
+  .navigation2 .nav-links2 a{
+	  position: static;
+	  visibility: visible;
+	  text-decoration: none;
+	  color: rgb(255, 255, 255);
+	  text-transform: uppercase;
+	  font-size: 20px;
+    font-weight: bolder;
+	}  
+
+  .nav-links2 {
+    position: fixed;
+    right: 100%;
+    top: 35px;
+    color: var(--black-color);
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 40px;
+    font-family: var(--specific-font);
+    border: 10px solid transparent; 
+    border-image: linear-gradient(to bottom, #000000 0%, #ffffff 100%) 1;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    clip-path: polygon(0% 20%, 20% 0%, 
+        100% 0%, 100% 0%, 
+        100% 80%, 80% 100%, 
+        0% 100%, 0% 100%);
+  } 
+
+  .Location {
+    text-align: center;
+    font-family: var(--specific-font);
+    margin: 1rem;
+    font-size: 30px;
+    position: relative;
+    width: 70%;
+    left: 16%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , #ffffff);
+    color: #000;
+  }
+
+  .Nav_all{
+    position:absolute;
+    visibility: hidden;
+  }
+
+  .content{
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .Card {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .card-profile {
+    width: 275px;
+  }
+
+  .card__img {
+    width: 100%;
+    clip-path: polygon(0% 15%, 10% 0%, 100% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 100%);
+  }
+
+  .nav-links{
+    position: absolute;
+    visibility: hidden;
+  } 
+
+  .card__social {
+    width: 85%;
+  }
+
+  .card__social-text {
+    display: block;
+    font-size: 12px;
+    padding-left: 0.5rem;
+  }
+  
+  .nav-links__visibility {
+    right: 2.5%;
+  }
+}
+
+a:hover {
+	border-bottom: 1px solid #fff;
+}
